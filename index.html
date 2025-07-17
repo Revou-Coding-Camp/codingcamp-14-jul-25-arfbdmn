@@ -1,59 +1,208 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-
-    <!-- CSS External Link -->
-    <link rel="stylesheet" href="css/styles.css" />
-
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>PT. Teknologi Maju - Profil Perusahaan</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-
+  
   <body>
-    <header class="flex justify-between items-center bg-gray-100 p-4">
-      <!-- logo icon -->
-      <div
-        class="h-16 w-16 bg-[url(https://picsum.photos/200/300)] rounded-full bg-center bg-cover"
-      ></div>
-
-      <nav class="flex">
-        <a
-          class="border rounded-[4px] py-[4px] px-[8px] text-decoration-none"
-          href="#home-page"
-          >Home</a
-        >
-        <a
-          class="border rounded-[4px] py-[4px] px-[8px] text-decoration-none"
-          href="#our-profile"
-          >Our Profile</a
-        >
-        <a
-          class="border rounded-[4px] py-[4px] px-[8px] text-decoration-none"
-          href="#message-us"
-          >Message Us</a
-        >
-      </nav>
+    <!-- Header Navigation -->
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <h2>PT. Teknologi Maju</h2>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#profile" class="nav-link">Our Profile</a></li>
+            <li><a href="#headquarters" class="nav-link">Portfolio</a></li>
+            <li><a href="#contact" class="nav-link">Message Us</a></li>
+          </ul>
+        </nav>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </header>
 
-    <main>
-      <section id="home-page"></section>
-      <h1 class="text-2xl font-bold text-center my-4">
-        Welcome <span id="welcome-user">User</span> to our website
-      </h1>
-      <p class="text-center">This is a sample text for the home page</p>
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+      <div class="container">
+        <div class="welcome-content">
+          <h1 id="greeting">Hi Harfi, Welcome To Website</h1>
+          <p>We deliver website better services</p>
+          <button class="cta-button" onclick="scrollToSection('profile')">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </section>
 
-      <section id="our-profile">
-        <h2 class="text-xl font-semibold text-center my-4">Our Profile</h2>
-        <p class="text-center"> This is a sample text for the our profile page</p>
-      </section>
+    <!-- Profile Section -->
+    <section id="profile" class="profile-section">
+      <div class="container">
+        <h2 class="section-title">Our Profile</h2>
 
-      <section id="message-us"></section>
-    </main>
+        <!-- Banner Foto -->
+        <div class="banner-photo">
+          <img
+            src="https://via.placeholder.com/800x400/4CAF50/white?text=PT.+Teknologi+Maju"
+            alt="Company Banner"
+          />
+        </div>
 
-    <footer></footer>
+        <!-- Tentang Perusahaan -->
+        <div class="about-company">
+          <h3>Tentang Perusahaan</h3>
+          <p>
+            PT. Teknologi Maju adalah perusahaan yang bergerak di bidang
+            teknologi informasi dan komunikasi. Kami telah berpengalaman lebih
+            dari 10 tahun dalam mengembangkan solusi digital yang inovatif untuk
+            berbagai industri.
+          </p>
+
+          <div class="company-stats">
+            <div class="stat-item">
+              <h4>10+</h4>
+              <p>Tahun Pengalaman</p>
+            </div>
+            <div class="stat-item">
+              <h4>500+</h4>
+              <p>Klien Terpuaskan</p>
+            </div>
+            <div class="stat-item">
+              <h4>50+</h4>
+              <p>Tim Profesional</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visi dan Misi -->
+        <div class="vision-mission">
+          <div class="vision">
+            <h3>Visi</h3>
+            <p>
+              Menjadi perusahaan teknologi terdepan di Indonesia yang memberikan
+              solusi digital terbaik untuk memajukan bisnis klien di era
+              digital.
+            </p>
+          </div>
+          <div class="mission">
+            <h3>Misi</h3>
+            <ul>
+              <li>Mengembangkan teknologi inovatif yang mudah digunakan</li>
+              <li>
+                Memberikan layanan berkualitas tinggi dengan harga terjangkau
+              </li>
+              <li>Membangun tim profesional yang kompeten dan berdedikasi</li>
+              <li>Menjalin kemitraan jangka panjang dengan klien</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Headquarters Section -->
+    <section id="headquarters" class="headquarters-section">
+      <div class="container">
+        <h2 class="section-title">Our Headquarters</h2>
+        <div class="headquarters-grid">
+          <div class="office-card">
+            <div class="office-icon">🏢</div>
+            <h3>Jakarta</h3>
+            <p>Kantor Pusat</p>
+          </div>
+          <div class="office-card">
+            <div class="office-icon">🏢</div>
+            <h3>Bandung</h3>
+            <p>Kantor Cabang</p>
+          </div>
+          <div class="office-card">
+            <div class="office-icon">🏢</div>
+            <h3>Surabaya</h3>
+            <p>Kantor Cabang</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="section-title">Message Us</h2>
+        <div class="contact-content">
+          <div class="contact-form">
+            <form id="messageForm">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+                <span class="error-message" id="nameError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+                <span class="error-message" id="emailError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required />
+                <span class="error-message" id="phoneError"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+                <span class="error-message" id="messageError"></span>
+              </div>
+
+              <button type="submit" class="submit-button">Send Message</button>
+            </form>
+          </div>
+
+          <div class="contact-info">
+            <h3>Contact Info</h3>
+            <div class="info-item">
+              <strong>Email:</strong> info@teknologimaju.com
+            </div>
+            <div class="info-item">
+              <strong>Phone:</strong> +62 21 1234 5678
+            </div>
+            <div class="info-item">
+              <strong>Address:</strong> Jl. Sudirman No. 123, Jakarta Pusat
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Message Sent Successfully!</h2>
+        <div id="submittedData"></div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 PT. Teknologi Maju. All rights reserved.</p>
+      </div>
+    </footer>
 
     <script src="js/script.js"></script>
   </body>
