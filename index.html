@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- CSS External Link -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body>
+    <header class="flex justify-between items-center bg-gray-100 p-4">
+      <!-- logo icon -->
+      <div
+        class="h-16 w-16 bg-[url(https://picsum.photos/200/300)] rounded-full bg-center bg-cover"
+      ></div>
+
+      <nav class="flex">
+        <a
+          class="border rounded-[4px] py-[4px] px-[8px] text-decoration-none"
+          href="#home-page"
+          >Home</a
+        >
+        <a
+          class="border rounded-[4px] py-[4px] px-[8px] text-decoration-none"
+          href="#our-profile"
+          >Our Profile</a
+        >
+        <a
+          class="border rounded-[4px] py-[4px] px-[8px] text-decoration-none"
+          href="#message-us"
+          >Message Us</a
+        >
+      </nav>
+    </header>
+
+    <main>
+      <section id="home-page"></section>
+      <h1 class="text-2xl font-bold text-center my-4">
+        Welcome <span id="welcome-user">User</span> to our website
+      </h1>
+      <p class="text-center">This is a sample text for the home page</p>
+
+      <section id="our-profile">
+        <h2 class="text-xl font-semibold text-center my-4">Our Profile</h2>
+        <p class="text-center"> This is a sample text for the our profile page</p>
+      </section>
+
+      <section id="message-us"></section>
+    </main>
+
+    <footer></footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
