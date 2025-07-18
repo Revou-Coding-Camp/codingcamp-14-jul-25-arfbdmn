@@ -161,6 +161,13 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 768px) {
+  .banner-photo img {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
 .about {
   margin-bottom: 3rem;
 }
@@ -211,9 +218,9 @@ body {
 
 .ideology-asal {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  margin-top: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
 .ideology,
