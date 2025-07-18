@@ -161,24 +161,24 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-.about-company {
+.about {
   margin-bottom: 3rem;
 }
 
-.about-company h3 {
+.about h3 {
   font-size: 2rem;
   margin-bottom: 1rem;
   color: #333;
 }
 
-.about-company p {
+.about p {
   font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: 2rem;
   color: #666;
 }
 
-.company-stats {
+.stats {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
@@ -209,56 +209,56 @@ body {
   font-weight: 500;
 }
 
-.vision-mission {
+.ideology-asal {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
   margin-top: 3rem;
 }
 
-.vision,
-.mission {
+.ideology,
+.asal-usul {
   background: white;
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.vision h3,
-.mission h3 {
+.ideology h3,
+.asal-usul h3 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
   color: #333;
 }
 
-.vision p,
-.mission ul {
+.ideology p,
+.asal-usul p,
+.asal-usul q {
   color: #666;
   line-height: 1.8;
 }
 
-.mission ul {
-  padding-left: 1.5rem;
-}
-
-.mission li {
-  margin-bottom: 0.5rem;
-}
-
-/* Headquarters Section */
-.headquarters-section {
+/* Islands Section */
+.islands-section {
   padding: 80px 0;
   background: white;
 }
 
-.headquarters-grid {
+.islands-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
 }
 
-.office-card {
+.islands-section p {
+  font-size: large;
+  color: #666;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.card {
   text-align: center;
   padding: 2rem;
   background: #f8f9fa;
@@ -267,24 +267,27 @@ body {
   border: 2px solid transparent;
 }
 
-.office-card:hover {
+.card:hover {
   transform: translateY(-5px);
   border-color: #667eea;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-.office-icon {
-  font-size: 3rem;
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
   margin-bottom: 1rem;
 }
 
-.office-card h3 {
+.card h3 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
   color: #333;
 }
 
-.office-card p {
+.card p {
   color: #666;
 }
 
@@ -501,7 +504,7 @@ body {
     gap: 2rem;
   }
 
-  .company-stats {
+  .stats {
     grid-template-columns: 1fr;
   }
 

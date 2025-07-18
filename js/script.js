@@ -2,18 +2,13 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Fungsi untuk mendapatkan nama dari user
   function getUserName() {
-    let userName = localStorage.getItem("userName");
+    let userName = prompt("Masukkan nama Anda:");
 
-    if (!userName) {
-      userName = prompt("Masukkan nama Anda:");
-      if (userName) {
-        localStorage.setItem("userName", userName);
-      } else {
-        userName = "Pengunjung";
-      }
+    if (!userName || userName.trim() === "") {
+      userName = "Pengunjung";
     }
 
-    return userName;
+    return userName.trim();
   }
 
   // Set greeting dengan nama user
